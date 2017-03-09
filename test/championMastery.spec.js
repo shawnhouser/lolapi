@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 
 describe('api', function () {
 
-  describe('#ChampionMastery', function () {
+  describe('#championMastery', function () {
 
     it('should return a players mastery score', function (done) {
       var summonerId = 71054;
