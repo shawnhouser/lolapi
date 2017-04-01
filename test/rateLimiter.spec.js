@@ -27,7 +27,7 @@ describe('util', function () {
       var count = 0;
 
       function getFeaturedGames() {
-        api.FeaturedGames.get(function (error, result) {
+        api.Game.featured(function (error, result) {
           expect(error).to.not.be.ok;
 
           if (++count < 11) {

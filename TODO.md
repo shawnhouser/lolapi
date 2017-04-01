@@ -19,3 +19,4 @@
 - [] Update /lib/api/static.js
 - [] Merge functions in /lib/api/static.js
 - [] find a way to stadardize getting the options chosen correctly
+- [] format all code to the same, and make some standards
