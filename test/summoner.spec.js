@@ -33,7 +33,7 @@ describe('api', function () {
     });
 
     it('should retrieve summoner by name', function (done) {
-      api.Summoner.getByName(summonerNames[0], function (error, result) {
+      api.Summoner.get(summonerNames[0], function (error, result) {
         expect(error).to.not.be.ok;
         expect(result).to.be.ok;
         expect(result).to.be.an('object');
@@ -45,7 +45,7 @@ describe('api', function () {
     });
 
     it('should retrieve multiple summoners by name', function (done) {
-      api.Summoner.getByName(summonerNames, function (error, result) {
+      api.Summoner.get(summonerNames, function (error, result) {
         expect(error).to.not.be.ok;
         expect(result).to.be.ok;
         expect(result).to.be.an('object');
