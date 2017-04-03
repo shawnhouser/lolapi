@@ -11,7 +11,7 @@ describe('api', function () {
     };
 
     it('should return a champion list', function (done) {
-      api.Static.getChampions(function (error, result) {
+      api.Static.champion(function (error, result) {
         expect(error).to.not.be.ok;
         expect(result).to.be.ok;
         expect(result).to.be.an('object');
@@ -21,7 +21,7 @@ describe('api', function () {
     });
 
     it('should return champion \'Thresh\'', function (done) {
-      api.Static.getChampion(champion.id, function (error, result) {
+      api.Static.champion(champion.id, function (error, result) {
         expect(error).to.not.be.ok;
         expect(result).to.be.ok;
         expect(result).to.be.an('object');
@@ -37,7 +37,7 @@ describe('api', function () {
         champData: 'stats'
       };
 
-      api.Static.getChampion(champion.id, options, function (error, result) {
+      api.Static.champion(champion.id, options, function (error, result) {
         expect(error).to.not.be.ok;
         expect(result).to.be.ok;
         expect(result).to.be.an('object');
