@@ -27,7 +27,7 @@ describe('util', function () {
       var count = 0;
 
       function getFeaturedGames() {
-        api.Game.featured(function (error, result) {
+        api.Spectator.featured(function (error, result) {
           expect(error).to.not.be.ok;
 
           if (++count < 11) {

@@ -9,15 +9,7 @@ describe('api', function () {
       var summonerId = 71054;
       api.ChampionMastery.getScore(summonerId, function (error, result) {
         expect(error).to.not.be.ok;
-        expect(result).to.be.ok;
-        done();
-      });
-    });
-
-    it('should return a players top champions', function (done) {
-      var summonerId = 71054;
-      api.ChampionMastery.getTop(summonerId, function (error, result) {
-        expect(error).to.not.be.ok;
+        
         expect(result).to.be.ok;
         done();
       });
