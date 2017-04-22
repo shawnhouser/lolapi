@@ -5,14 +5,6 @@ describe('api', function () {
 
   describe('#champion', function () {
 
-    it('should return an error on invalid champonId', function (done) {
-      api.Champion.get('invalid championId', function (error, result) {
-        expect(error).to.be.ok;
-        expect(result).to.not.be.ok;
-        done();
-      });
-    });
-
     it('should return one champion given a valid Id', function (done) {
       var championId = 10;
 

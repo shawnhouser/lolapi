@@ -34,7 +34,9 @@ describe('api', function () {
 
     it('should return champion stats', function (done) {
       var options = {
-        champData: 'stats'
+        query:{
+            champData: 'stats'
+        }
       };
 
       api.Static.champion(champion.id, options, function (error, result) {
