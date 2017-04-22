@@ -43,9 +43,7 @@ describe('api', function () {
         expect(error).to.not.be.ok;
         expect(result).to.be.ok;
         expect(result).to.be.an('object');
-        expect(result[summonerId]).to.ok;
-        expect(result[summonerId]).to.be.an('object');
-        expect(result[summonerId].summonerId).to.equal(summonerId);
+        expect(result.summonerId).to.equal(summonerId);
         done();
       });
     });
@@ -55,9 +53,7 @@ describe('api', function () {
         expect(error).to.not.be.ok;
         expect(result).to.be.ok;
         expect(result).to.be.an('object');
-        expect(result[summonerId]).to.ok;
-        expect(result[summonerId]).to.be.an('object');
-        expect(result[summonerId].summonerId).to.equal(summonerId);
+        expect(result.summonerId).to.equal(summonerId);
         done();
       });
     });
