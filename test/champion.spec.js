@@ -27,7 +27,7 @@ describe('api', function () {
     });
 
     it('should return all free to play champions', function (done) {
-      api.Champion.get({ freeToPlay: true }, function (error, result) {
+      api.Champion.get({query:{ freeToPlay: true }}, function (error, result) {
         expect(error).to.not.be.ok;
         expect(result).to.be.ok;
         expect(result.champions).to.be.ok;
